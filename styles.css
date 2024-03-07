@@ -3,7 +3,7 @@
   font-family: 'latolight';
 
   /* Path to the WOFF file */
-  src: url('fonts/font.woff') format('woff');
+  src: url('fonts/Lato-Light.woff') format('woff');
 
   /* Optional: Font weight and style */
   font-weight: normal;
