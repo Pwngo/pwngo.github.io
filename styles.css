@@ -1,5 +1,16 @@
+@font-face {
+  /* Font family name */
+  font-family: 'Lato-Lite';
+
+  /* Path to the WOFF file */
+  src: url('path/to/font.woff') format('woff');
+
+  /* Optional: Font weight and style */
+  font-weight: normal;
+  font-style: normal;
+}
 body {
-  font-family: Arial, sans-serif;
+  font-family: Lato-Lite;
   margin: 0;
   padding: 0;
 }
