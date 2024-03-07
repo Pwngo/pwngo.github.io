@@ -1,6 +1,6 @@
 @font-face {
   /* Font family name */
-  font-family: 'Lato-Lite';
+  font-family: 'latolight';
 
   /* Path to the WOFF file */
   src: url('fonts/font.woff') format('woff');
@@ -10,7 +10,7 @@
   font-style: normal;
 }
 body {
-  font-family: Lato-Lite;
+  font-family: latolight;
   margin: 0;
   padding: 0;
 }
