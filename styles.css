@@ -51,7 +51,8 @@ h2 {
   padding: 20px;
   margin-bottom: 20px;
   border-style: solid;
-  border-color: dark-grey;	
+  border-color: dark-grey;
+  text-decoration: none;
 }
 .testimonial{
   background-color: white;
