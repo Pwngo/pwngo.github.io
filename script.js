@@ -17,4 +17,5 @@ x = document.querySelectorAll("section");
       show(targetSection);
     });
   });
+  show(document.getElementById("events"));
 });
