@@ -50,7 +50,14 @@ h2 {
   padding: 20px;
   margin-bottom: 20px;
 }
-
+.testimonial{
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-style: solid;
+  border-color: black;	
+  border-radius: 50px;
+}
 footer {
   background-color: #333;
   color: #fff;
