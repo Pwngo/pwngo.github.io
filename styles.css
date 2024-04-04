@@ -52,7 +52,6 @@ h2 {
   margin-bottom: 20px;
   border-style: solid;
   border-color: dark-grey;
-  text-decoration: none;
 }
 .testimonial{
   background-color: white;
@@ -65,12 +64,10 @@ h2 {
 event_1{
   color: #f9f9f9;
   border-color: black;
-  text-decoration: none;
 }
 event_2{
   color: #f9f9f9;
   border-color: black;
-  text-decoration: none;
 }
 footer {
   background-color: #333;
