@@ -45,13 +45,14 @@ h2 {
   color: #333;
 }
 
-.event, .workshop {
+.events, .workshop {
   color: black;
   background-color:#f9f9f9;
   padding: 20px;
   margin-bottom: 20px;
   border-style: solid;
   border-color: dark-grey;
+  text-decoration: none;
 }
 .testimonial{
   background-color: white;
