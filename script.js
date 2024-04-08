@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
       var targetId = this.getAttribute('href').slice(1);
       var targetSection = document.getElementById(targetId);
       show(targetSection);
+     alert("U sure?");
     });
   });
   show(document.getElementById("events"));
