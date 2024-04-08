@@ -6,15 +6,5 @@ function show(elem){
 }
 document.addEventListener('DOMContentLoaded', function() {
   var x = document.querySelectorAll("section");
-  var navLinks = document.querySelectorAll('nav ul li a');
-  navLinks.forEach(function(link) {
-   link.addEventListener('click', function(event) {
-      event.preventDefault();
-      var targetId = this.getAttribute('href').slice(1);
-      var targetSection = document.getElementById(targetId);
-      show(targetSection);
-     alert("U sure?");
-    });
-  });
   show(document.getElementById("events"));
 });
