@@ -1,6 +1,6 @@
 function show(x, elem){
   try{
-  for(var i = 0; i < x.length i++){
+  for(var i = 0; i < x.length; i++){
     x[i].style.display = "none";
   }
   elem.style.display = "block";
