@@ -1,7 +1,7 @@
 function show(x, elem){
   try{
   for(var i = 0; i < x.length; i++){
-    if(!(x.innerHTML.includes('id="' + elem.id + '"'))){
+    if(!(x[i].innerHTML.includes('id="' + elem.id + '"'))){
     x[i].style.display = "none";
     }
   }
