@@ -104,3 +104,14 @@ button {
 button:hover {
   background-color: #555;
 }
+#calendar{
+  table {
+    width: 100%;
+    table-layout: fixed;
+}
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+}
