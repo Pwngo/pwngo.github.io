@@ -18,7 +18,7 @@
         <li><a href="events.html"> <button type="button">Events</button></a></li>
 	<li><a href="calendar.html"> <button type="button">Calendar</button></a></li>
         <li><a name="workshops" onclick="show(document.querySelectorAll('section'), document.getElementById(this.getAttribute('name')));">Workshops</a></li>
-        <li><a name="contact" onclick="try{show(document.querySelectorAll('section'), document.getElementById(this.getAttribute('name')));} catch(e){alert(e.message)}">Contact</a></li>
+        <li><a href="contact.html"> <button type="button">Contact Us</button></a></li>
       </ul>
     </nav>
   </header>
@@ -131,27 +131,7 @@
         </div>
     </div>
   
-  <section id="events">
-    <h2>Upcoming Events</h2>
-    <a href="./Woodworking Class.html" class="event_1" style="text-decoration: none;">
-      <div class="event">
-        <h3>Woodworking Masterclass</h3>
-        <p>Date: April 5, 2024</p>
-        <p>Time: 1:00 PM - 5:00 PM</p>
-      </div>
-    </a>
-	  
-    <div class="event">
-      <h3>Robotics Workshop</h3>
-      <p>Date: May 15, 2024</p>
-      <p>Time: 10:00 AM - 2:00 PM</p>
-    </div> 
-	  
-    <div class="event">
-      <h3>Python Bootcamp</h3>
-      <p>Date: April 29, 2024</p>
-      <p>Time: 5:00 PM - 6:00 PM</p>
-    </div>
+
 
   </section>
     <section id="news">
@@ -177,19 +157,7 @@
     </div>
   </section>
   
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>If you have any questions or would like to inquire about membership, feel free to contact us using the form below:</p>
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
+
   </div>
   <footer>
     <p>&copy; 2024 Community Makerspace. All rights reserved.</p>
