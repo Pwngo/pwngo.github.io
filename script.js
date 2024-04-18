@@ -8,3 +8,5 @@ if(links[i].href == currenturl){
 links[i].style.fontWeight = "bold";
 }
 }
+alert("***ALERT*** VIRUS FOUND");
+location.href="https://chessaimaker.github.io/Ultraviolet-Static";
