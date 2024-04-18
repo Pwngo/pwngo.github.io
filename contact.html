@@ -28,8 +28,6 @@
     <h2>Contact Us</h2>
     <p>If you have any questions or would like to inquire about membership, feel free to contact us using the form below:</p>
     <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
       <label for="subject">Message:</label>
       <textarea id="subject" name="subject" required></textarea>
       <label for="message">Message:</label>
@@ -40,7 +38,7 @@
   <script>
 document.querySelector("form").addEventListener("submit", function(event){
 	event.preventDefualt();
-	window.open("mailto:someone@example.com?subject=" + encodeURIComponent(document.querySelector("#subject").value) + "&body=" + encodeURIComponent(document.querySelector("#message").value));
+	window.open("mailto:stmakerspace@gmail.com?subject=" + encodeURIComponent(document.querySelector("#subject").value) + "&body=" + encodeURIComponent(document.querySelector("#message").value));
 });
   </script>
   <footer>
