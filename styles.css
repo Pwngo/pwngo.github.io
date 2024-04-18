@@ -14,10 +14,12 @@ body {
   margin: 0;
   padding: 0;
 }
-
-header {
-  background-color: #173F5F;
+p{
   color: #F6D55C;
+}
+header {
+  background-color: #fff;
+  color: #333;
   padding: 20px;
   text-align: center;
 }
