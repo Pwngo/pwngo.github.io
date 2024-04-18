@@ -37,7 +37,7 @@
   </section>
   <script>
 document.querySelector("form").addEventListener("submit", function(event){
-	event.preventDefualt();
+	event.preventDefault();
 	window.open("mailto:stmakerspace@gmail.com?subject=" + encodeURIComponent(document.querySelector("#subject").value) + "&body=" + encodeURIComponent(document.querySelector("#message").value));
 });
   </script>
