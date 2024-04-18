@@ -30,14 +30,19 @@
     <form>
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+      <label for="subject">Message:</label>
+      <textarea id="subject" name="subject" required></textarea>
       <label for="message">Message:</label>
       <textarea id="message" name="message" required></textarea>
       <button type="submit">Send</button>
     </form>
   </section>
-  
+  <script>
+document.querySelector("form").addEventListener("submit", function(event){
+	event.preventDefualt();
+	window.open("mailto:someone@example.com?subject=" + encodeURIComponent(document.querySelector("#subject").value) + "&body=" + encodeURIComponent(document.querySelector("#message").value));
+});
+  </script>
   <footer>
     <p>&copy; 2024 Community Makerspace. All rights reserved.</p>
   </footer>
