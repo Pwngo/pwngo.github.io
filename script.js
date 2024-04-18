@@ -1,17 +1,10 @@
-function show(x, elem){
-  try{
-  for(var i = 0; i < x.length; i++){
-    if(!(x[i].innerHTML.includes('id="' + elem.id + '"'))){
-    x[i].style.display = "none";
-    }
-  }
-  elem.style.display = "block";
-  } catch(e){
-    alert(e.message);
-  }
+var currenturl = location.href.replace(location.origin + "/", "");
+if(currenturl == ""){
+  currenturl = "index.html";
 }
-try{
-show(document.querySelectorAll("section"), document.getElementById("events"));
-} catch(e){
-  alert(e.message);
+var links = document.querySelectorAll("a");
+for(var i = 0, i < links.length; i++){
+if(links[i].href == currenturl){
+links[i].style.fontWeight = "bold";
+}
 }
