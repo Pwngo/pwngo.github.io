@@ -16,7 +16,6 @@ body {
   font-family: latolight;
   margin: 0;
   padding: 0;
-  background-color: #161421;
 }
 header {
   background-color: #161421;
@@ -93,7 +92,7 @@ textarea {
 }
 
 button {
-  background-color: rgba(0, 0, 0, 1);
+  background-color: #333;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -101,7 +100,7 @@ button {
 }
 
 button:hover {
-  background-color: #333;
+  background-color: #555;
 }
 #calendar{
   table {
