@@ -5,7 +5,7 @@
   font-style: normal;
 }
 
-header div footer {
+html {
   position: relative;
   animation: animatetop 0.4s;
 }
@@ -133,7 +133,7 @@ textarea {
 }
 
 button {
-  background-color: rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 0);
   color: #fff;
   padding: 10px 20px;
   border: none;
