@@ -133,6 +133,7 @@ textarea {
 }
 
 button {
+  background-color: rgba(0, 0, 0, 1);
   color: #fff;
   padding: 10px 20px;
   border: none;
