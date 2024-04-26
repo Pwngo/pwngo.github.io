@@ -5,7 +5,7 @@
   font-style: normal;
 }
 
-* {
+header, div, footer {
   position: relative;
   animation: animatetop 0.4s;
 }
