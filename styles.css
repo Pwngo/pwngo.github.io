@@ -1,76 +1,27 @@
 @font-face {
+  /* Font family name */
   font-family: 'latolight';
+
+  /* Path to the WOFF file */
   src: url('fonts/Lato-Light.woff') format('woff');
+
+  /* Optional: Font weight and style */
   font-weight: normal;
   font-style: normal;
 }
-
-html {
-  position: relative;
-  animation: animatetop 0.4s;
-}
-
-@keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
+*{
+  position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}
 }
 body {
-  font-family: 'latolight';
+  font-family: latolight;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-color: #1a1a2e; /* Dark blue-gray background */
-  color: #fff; /* White text */
-  height: 1vw; /* Fix footer not at bottom error */
 }
-
 header {
-  display: flex;
-  justify-content: space-between;
+  background-color: #161421;
+  color: #F6D55C;
   padding: 20px;
-  align-items: center;
-}
-
-header .title {
-  font-size: 1.2em; /* Smaller title */
-  text-align: right;
-}
-
-header .nav-links {
-  display: flex;
-  gap: 20px;
-}
-
-header .nav-links a {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-header .nav-links a:hover {
-  background-color: #555;
-}
-
-section {
-  padding: 50px;
-  flex: 1;
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
   text-align: center;
-  padding: 20px;
 }
 
 nav ul {
@@ -88,30 +39,43 @@ nav ul li a {
   text-decoration: none;
 }
 
+section {
+  padding: 50px;
+}
 
 h2 {
-  color: #fff;
+  color: black;
 }
 
 .event, .workshop {
-  color: #fff;
+  color: black;
+  background-color:#f9f9f9;
   padding: 20px;
   margin-bottom: 20px;
-  border: 1px solid #fff;
+  border-style: solid;
+  border-color: dark-grey;
 }
-
-.testimonial {
+.testimonial{
+  background-color: white;
   padding: 20px;
   margin-bottom: 20px;
-  border: 1px solid #333;
-  border-radius: 25px;
+  border-style: solid;
+  border-color: black;	
+  border-radius: 50px;
 }
-.star{
-  color: #D4AF37
-}
-.event_1 {
+event_1{
   color: #f9f9f9;
-  border-color: #333;
+  border-color: black;
+}
+event_2{
+  color: #f9f9f9;
+  border-color: black;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
 }
 
 form {
@@ -129,31 +93,27 @@ textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #333;
 }
 
 button {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #333;
   color: #fff;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
-  float: left;
 }
 
 button:hover {
-  background-color: rgba(50, 50, 50, 0.5);
+  background-color: #555;
 }
-
-#calendar {
+#calendar{
   table {
     width: 100%;
     table-layout: fixed;
-  }
-
-  th, td {
-    border: 1px solid #fff;
+}
+th, td {
+    border: 1px solid black;
     padding: 5px;
     text-align: center;
-  }
+}
 }
