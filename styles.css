@@ -89,7 +89,7 @@ nav ul li a {
 
 
 h2 {
-  color: #333;
+  color: #fff;
 }
 
 .event, .workshop {
@@ -101,13 +101,14 @@ h2 {
 }
 
 .testimonial {
-  background-color: #fff;
   padding: 20px;
   margin-bottom: 20px;
   border: 1px solid #333;
   border-radius: 25px;
 }
-
+.star{
+  color: #D4AF37
+}
 .event_1 {
   color: #f9f9f9;
   border-color: #333;
@@ -150,7 +151,7 @@ button:hover {
   }
 
   th, td {
-    border: 1px solid #333;
+    border: 1px solid #fff;
     padding: 5px;
     text-align: center;
   }
