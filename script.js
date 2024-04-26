@@ -4,7 +4,7 @@ if(currenturl == ""){
 }
 alert(currenturl);
 var links = document.querySelectorAll("a");
-for(var i = 0, i < links.length; i++){
+for(var i = 0; i < links.length; i++){
 if(links[i].href == currenturl){
 links[i].style.fontWeight = "bold";
 }
