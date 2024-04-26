@@ -1,22 +1,32 @@
 @font-face {
-  /* Font family name */
   font-family: 'latolight';
-
-  /* Path to the WOFF file */
   src: url('fonts/Lato-Light.woff') format('woff');
-
-  /* Optional: Font weight and style */
   font-weight: normal;
   font-style: normal;
 }
-*{
-  position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}
+
+* {
+  position: relative;
+  animation: animatetop 0.4s;
 }
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
 body {
   font-family: latolight;
   margin: 0;
   padding: 0;
 }
+
 header {
   background-color: #161421;
   color: #F6D55C;
@@ -44,29 +54,30 @@ section {
 }
 
 h2 {
-  color: black;
+  color: #333;
 }
 
 .event, .workshop {
-  color: black;
-  background-color:#f9f9f9;
+  color: #333;
+  background-color: #f9f9f9;
   padding: 20px;
   margin-bottom: 20px;
-  border-style: solid;
-  border-color: dark-grey;
+  border: 1px solid #333;
 }
-.testimonial{
-  background-color: white;
+
+.testimonial {
+  background-color: #fff;
   padding: 20px;
   margin-bottom: 20px;
-  border-style: solid;
-  border-color: black;	
-  border-radius: 50px;
+  border: 1px solid #333;
+  border-radius: 25px;
 }
-event_1{
+
+.event_1 {
   color: #f9f9f9;
-  border-color: black;
+  border-color: #333;
 }
+
 footer {
   background-color: #333;
   color: #fff;
@@ -89,6 +100,7 @@ textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
+  border: 1px solid #333;
 }
 
 button {
@@ -102,14 +114,16 @@ button {
 button:hover {
   background-color: #555;
 }
-#calendar{
+
+#calendar {
   table {
     width: 100%;
     table-layout: fixed;
-}
-th, td {
-    border: 1px solid black;
+  }
+
+  th, td {
+    border: 1px solid #333;
     padding: 5px;
     text-align: center;
-}
+  }
 }
