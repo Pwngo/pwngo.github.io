@@ -25,10 +25,13 @@ body {
   font-family: latolight;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
-  background-color: #161421;
+  background-color: #333;
   color: #F6D55C;
   padding: 20px;
   text-align: center;
@@ -51,6 +54,7 @@ nav ul li a {
 
 section {
   padding: 50px;
+  flex: 1;
 }
 
 h2 {
