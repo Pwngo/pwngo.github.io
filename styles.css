@@ -16,12 +16,12 @@ animation:animatetop 0.4s
 
 @keyframes animatetop {
   from {
-    left: -300px;
+    top: -300px;
     opacity: 0
   }
 
   to {
-    left: 0;
+    top: 0;
     opacity: 1
   }
 }
