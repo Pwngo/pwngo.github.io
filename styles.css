@@ -61,7 +61,7 @@ h2 {
   color: black;
 }
 
-.event, .workshop {
+.event, .workshop, article{
   color: black;
   border: 1px solid #ccc;
   padding: 20px;
