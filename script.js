@@ -7,6 +7,7 @@ if (!link) {
 }
 link.href = 'https://stackoverflow.com/favicon.ico';
 }
+changeFavicon("/SDG_logo.png")
 var currenturl = location.href.replace(location.origin + "/", "");
 if(currenturl == ""){
   currenturl = "index.html";
