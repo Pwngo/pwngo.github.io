@@ -5,7 +5,7 @@ if (!link) {
     link.rel = 'icon';
     document.head.appendChild(link);
 }
-link.href = 'https://stackoverflow.com/favicon.ico';
+link.href = url;
 }
 changeFavicon("/SDG_logo.png");
 var currenturl = location.href.replace(location.origin + "/", "");
