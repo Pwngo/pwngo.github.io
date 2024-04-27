@@ -19,3 +19,29 @@ alert(links[i]);
 links[i].style.fontWeight = "bold";
 }
 }
+
+let eventElements = document.querySelectorAll('.event, .workshop');
+
+// Add a click event listener to each element
+eventElements.forEach(function(element) {
+  element.addEventListener('click', function() {
+    // Toggle the 'active' class on click
+    this.classList.toggle('active');
+  });
+});
+
+// Select all elements with class 'testimonial'
+let testimonialElements = document.querySelectorAll('.testimonial');
+
+// Add a mouseover event listener to each element
+testimonialElements.forEach(function(element) {
+  element.addEventListener('mouseover', function() {
+    // Add the 'highlight' class on mouseover
+    this.classList.add('highlight');
+  });
+
+  element.addEventListener('mouseout', function() {
+    // Remove the 'highlight' class on mouseout
+    this.classList.remove('highlight');
+  });
+});
