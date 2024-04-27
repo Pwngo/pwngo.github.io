@@ -54,23 +54,35 @@
     <form>
       <label for="date">Date:</label>
       <input placeholder="MM/DD/YYYY" type="date" id="date" name="date" required>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+      <label for="name1">Event Name:</label>
+      <input type="text" id="name1" name="name1" required>
+      <label for="name2">Your Name:</label>
+      <input type="text" id="name2" name="name2" required>
       <label for="message">Event Description:</label>
       <textarea id="message" name="message" required></textarea>
-      <label for="message">Additional Comments(Optional):</label>
-      <textarea id="message" name="message" required></textarea>
-      <label for="time">Event Start Time:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Event End Time:</label>
-      <input type="time" id="time" name="time" required>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="time" id="time" name="time" required>
+      <label for="startdate">Event Date:</label>
+      <input type="date" id="date" name="date" required>
       <br>
       <br>
       <button type="submit">Send</button>
-      <button type="reset">Reset</button>
     </form>
   </section>
 
-
+<script>
+	function mail(subject, message){
+window.open("mailto:stmakerspace@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(message));	
+	}
+	function parseDate(date){
+	return date.replace(/-/g, "/").slice(5, date.length) + "/" + date.slice(0, 4);
+	}
+	function enter(){
+        return document.decodeURIComponent("%0A");
+	}
+	document.querySelector("form").addEventListener("submit", function(event){
+		event.preventDefault();
+		alert("Thanks for contributing to the wbesite! We will look at your date and message you back with an available time slot.");
+		mail("Event - " + document.querySelector("#name1").value.trim(), "Hello, " + enter() + enter() + "My name is " + document.querySelector("#name2").value.trim() + ", and I would like to host this event at " + parseDate(document.querySelector("#date").value) + ". Here is an additional description of this event: " + enter() + enter() + document.querySelector("#message").value + enter() + enter() + "Thank you so much and have a great day!" + enter() + enter() + "Thanks and regards, " + enter() + document.querySelector("#name2").value.trim());
+	});
+</script>
 </body>
 </html>
