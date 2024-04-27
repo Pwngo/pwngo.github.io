@@ -134,8 +134,40 @@ button:hover {
   text-align: center;
   color: #333;
 }
+#classes {
+  font-family: 'latolight';
+  color: #444;
+}
+
+#classes h2, #classes h3 {
+  text-align: center;
+  color: #333;
+}
+
+#classes .class {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+#classes .class h4 {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#classes .class p {
+  font-size: 0.9em;
+  line-height: 1.6;
+}
+
 
 @media screen and (max-width: 600px) {
+  #classes .class {
+    font-size: 0.8em;
+  }
   #calendar th, #calendar td {
     font-size: 0.8em;
   }
