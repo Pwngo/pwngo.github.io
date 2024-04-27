@@ -7,7 +7,7 @@ if (!link) {
 }
 link.href = url;
 }
-changeFavicon("/logo.png");
+changeFavicon("/favicon.png");
 var currenturl = location.href.replace(location.origin + "/", "");
 if(currenturl == ""){
   currenturl = "index.html";
