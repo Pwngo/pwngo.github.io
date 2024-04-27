@@ -7,7 +7,7 @@ if (!link) {
 }
 link.href = url;
 }
-changeFavicon("/SDG_logo.png");
+changeFavicon("/logo.png");
 var currenturl = location.href.replace(location.origin + "/", "");
 if(currenturl == ""){
   currenturl = "index.html";
