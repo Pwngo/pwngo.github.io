@@ -10,7 +10,7 @@
   font-style: normal;
 }
 *{
-  position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}
+  animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}
 }
 body {
   font-family: latolight;
@@ -75,6 +75,7 @@ footer {
   background-color: #333;
   color: #fff;
   text-align: center;
+  padding: 20px;
 }
 
 form {
