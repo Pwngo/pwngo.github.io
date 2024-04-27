@@ -76,7 +76,7 @@ window.open("mailto:stmakerspace@gmail.com?subject=" + encodeURIComponent(subjec
 	return date.replace(/-/g, "/").slice(5, date.length) + "/" + date.slice(0, 4);
 	}
 	function enter(){
-        return document.decodeURIComponent("%0A");
+        return decodeURIComponent("%0A");
 	}
 	document.querySelector("form").addEventListener("submit", function(event){
 		event.preventDefault();
