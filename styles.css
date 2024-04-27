@@ -61,12 +61,12 @@ h2 {
 }
 
 .event, .workshop {
-  color: black;
-  background-color:#f9f9f9;
+  color: #f9f9f9;
+  border: 1px solid #ccc;
   padding: 20px;
   margin-bottom: 20px;
-  border-style: solid;
-  border-color: dark-grey;
+  background-color: #f9f9f9;
+  border-radius: 10px;
 }
 .testimonial{
   background-color: white;
