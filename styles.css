@@ -60,8 +60,26 @@ section {
 h2 {
   color: black;
 }
-.citation-container{
+.citation-container {
   font-family: "Times New Roman", Times, serif;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.citation-container i {
+  font-style: italic;
+}
+
+.citation-container a {
+  color: #0074d9;
+  text-decoration: none;
+}
+
+.citation-container a:hover {
+  text-decoration: underline;
 }
 .imageContainer{
   float: right;
