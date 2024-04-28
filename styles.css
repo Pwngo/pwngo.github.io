@@ -60,7 +60,10 @@ section {
 h2 {
   color: black;
 }
-
+.imageContainer{
+  position: relative;
+  right: 75%;
+}
 .event, .workshop, article{
   color: black;
   border: 1px solid #ccc;
