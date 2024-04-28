@@ -159,11 +159,6 @@ button:hover {
   color: #444;
 }
 
-#classes h2, #classes h3 {
-  text-align: center;
-  color: #333;
-}
-
 #classes .class {
   border: 1px solid #ccc;
   padding: 20px;
