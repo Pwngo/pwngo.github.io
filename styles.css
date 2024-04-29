@@ -103,6 +103,18 @@ h2 {
   background-color: #f9f9f9;
   border-radius: 10px;
 }
+/* Add a class for the elements you want to slide in */
+.slide-in {
+  opacity: 0;
+  transition: all 2s;
+}
+
+/* Define the state of the element when it's in view */
+.slide-in.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 .testimonial{
   background-color: white;
   padding: 20px;
