@@ -52,7 +52,10 @@
 
 <script>
 	function mail(subject, message){
-window.open("mailto:stmakerspace@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(message));	
+var win = window.open("mailto:stmakerspace@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(message));	
+if(!win){
+alert("Sorry, but it seems pop-ups aren't allowed! Please allow pop-ups for the email to be generated.");
+}
 	}
 	function parseDate(date){
 	return date.replace(/-/g, "/").slice(5, date.length) + "/" + date.slice(0, 4);
