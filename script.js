@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     let images = document.querySelectorAll('.imageContainer');
     images.forEach(function(element) {
       element.style.display='block';
-    }
+    });
   }, 500);
   document.querySelector("header").outerHTML = `<header>
 	  <center><img src="logo.png" style="margine: 0; border: none;" width="250"></center>
