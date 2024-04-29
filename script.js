@@ -23,7 +23,7 @@ function checkElementsInView() {
 
 // Listen for scroll events
 window.addEventListener('scroll', checkElementsInView);
-
+checkElementsInView();
 
 function downloadFile(url, name){
 var link = document.createElement("a");
