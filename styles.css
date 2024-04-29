@@ -17,19 +17,13 @@ animation:animatetop 0.4s
 @keyframes animatetop {
   from {
     top: -300px;
+    opacity: 0
   }
 
   to {
     top: 0;
+    opacity: 1
   }
-}
-@keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-@keyframes fadeOut {
-  0% {opacity: 1;}
-  100% {opacity: 0;}
 }
 body {
   font-family: latolight;
@@ -110,14 +104,6 @@ h2 {
   border-radius: 10px;
 }
 /* Add a class for the elements you want to slide in */
-.slide-in {
-  animation: fadeOut 1.5s forwards;
-}
-
-/* Define the state of the element when it's in view */
-.slide-in.active {
-  animation: fadeIn 1.5s forwards;
-}
 
 
 .testimonial{
