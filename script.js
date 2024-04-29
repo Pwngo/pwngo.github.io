@@ -1,3 +1,21 @@
+var allelems = document.querySelectorAll("*");
+var elemsFilter = ["<header>", "<h3>", "<h2>", "<h1>"];
+
+for(var i = 0; i < allelems.length; i++){
+	var toFilter = false;
+	for(var j = 0; j < elemsFilter.length; j++){
+		try{
+		if(allelems[i].outerHTML.includes(elemsFilter[j])){
+			toFilter = true;
+		}
+		} catch(e){
+			toFilter = true;
+		}
+	}
+	if(!toFilter){
+		allelems[i].classList.add("slide-in");
+	}
+}
 // Select all the elements you want to apply the effect to
 const slideInElements = document.querySelectorAll('.slide-in');
 
@@ -24,7 +42,6 @@ function checkElementsInView() {
 // Listen for scroll events
 window.addEventListener('scroll', checkElementsInView);
 checkElementsInView();
-
 function downloadFile(url, name){
 var link = document.createElement("a");
 link.href = url;
