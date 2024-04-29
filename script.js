@@ -60,6 +60,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 	<li><a href="calendar.html"> <button type="button">Calendar</button></a></li>
         <li><a href="contact.html"> <button type="button">Contact Us</button></a></li>
 	<li><a href="citations.html"> <button type="button">Sources</button></a></li>
+ 	<li><a href="documentation.html"> <button type="button">Documents</button></a></li>
       </ul>
     </nav>
   </header>`;
