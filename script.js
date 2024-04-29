@@ -22,30 +22,30 @@ links[i].style.fontWeight = "bold";
 
 let eventElements = document.querySelectorAll('.event, .workshop');
 
-// Add a click event listener to each element
 eventElements.forEach(function(element) {
   element.addEventListener('click', function() {
-    // Toggle the 'active' class on click
     this.classList.toggle('active');
   });
 });
 
-// Select all elements with class 'testimonial'
 let testimonialElements = document.querySelectorAll('.testimonial');
 
-// Add a mouseover event listener to each element
 testimonialElements.forEach(function(element) {
   element.addEventListener('mouseover', function() {
-    // Add the 'highlight' class on mouseover
     this.classList.add('highlight');
   });
 
   element.addEventListener('mouseout', function() {
-    // Remove the 'highlight' class on mouseout
     this.classList.remove('highlight');
   });
 });
 document.addEventListener("DOMContentLoaded", (event) => {
+  setTimeout(() => {
+    let images = document.querySelectorAll('.imageContainer');
+    images.forEach(function(element) {
+      element.style.display='block';
+    }
+  }, 500);
   document.querySelector("header").outerHTML = `<header>
 	  <center><img src="logo.png" style="margine: 0; border: none;" width="250"></center>
     <h1>Welcome to SpaceTime Makerspace</h1>
