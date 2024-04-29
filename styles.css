@@ -113,12 +113,12 @@ h2 {
 }
 /* Add a class for the elements you want to slide in */
 .slide-in {
-  animation: fadeOut 0.5s forwards;
+  animation: fadeOut 1.5s forwards;
 }
 
 /* Define the state of the element when it's in view */
 .slide-in.active {
-  animation: fadeIn 0.5s forwards;
+  animation: fadeIn 1.5s forwards;
 }
 
 
