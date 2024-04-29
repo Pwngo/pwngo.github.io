@@ -1,3 +1,29 @@
+// Select all the elements you want to apply the effect to
+const slideInElements = document.querySelectorAll('.slide-in');
+
+// Function to check if an element is in view
+function isInView(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+// Function to check if any of the elements are in view
+function checkElementsInView() {
+  for (const element of slideInElements) {
+    if (isInView(element)) {
+      element.classList.add('active');
+    }
+  }
+}
+
+// Listen for scroll events
+window.addEventListener('scroll', checkElementsInView);
+
 function downloadFile(url, name){
 var link = document.createElement("a");
 link.href = url;
