@@ -62,7 +62,7 @@ window.open("mailto:stmakerspace@gmail.com?subject=" + encodeURIComponent(subjec
 	}
 	document.querySelector("form").addEventListener("submit", function(event){
 		event.preventDefault();
-		alert("Thanks for contributing to the wbesite! We will look at your date and message you back with an available time slot.");
+		alert("Thanks for your interest! We will look at your date and message you back with an available time slot.");
 		mail("Event - " + document.querySelector("#name1").value.trim(), "Hello, " + enter() + enter() + "My name is " + document.querySelector("#name2").value.trim() + ", and I would like to host this event at " + parseDate(document.querySelector("#date").value) + ". Here is an additional description of this event: " + enter() + enter() + document.querySelector("#message").value + enter() + enter() + "Thank you so much and have a great day!" + enter() + enter() + "Thanks and regards, " + enter() + document.querySelector("#name2").value.trim());
 	});
 </script>
