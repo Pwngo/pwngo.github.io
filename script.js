@@ -6,6 +6,9 @@ document.body.appendChild(link);
 link.click();
 link.remove();
 }
+function viewFile(url){
+window.open(url);
+}
 function changeFavicon(url){
   var link = document.querySelector("link[rel~='icon']");
 if (!link) {
@@ -81,4 +84,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
 	    downloadFile("/" + fileName, fileName);
         });
     });
+	    const viewButtons = document.querySelectorAll(".view");
+    viewButtons.forEach((button) => {
+        button.addEventListener("click", function () {
+            const fileName = this.getAttribute("name") + ".pdf";
+            console.log("Viewing: " + fileName);
+	    viewFile("/" + fileName);
+        });
+    });
+	
 });
