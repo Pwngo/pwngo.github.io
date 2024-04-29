@@ -29,7 +29,7 @@
   <script>
 document.querySelector("form").addEventListener("submit", function(event){
 	event.preventDefault();
-	var win = window.open("mailto:stmakerspace@gmail.com?subject=" + encodeURIComponent(document.querySelector("#subject").value + ".") + "&body=" + encodeURIComponent("Hi, this is " + document.querySelector("#name").value) + "%0A%0A" + encodeURIComponent(document.querySelector("#message").value) + "%0A%0A" + encodeURIComponent("Thanks and regards, ") + "%0A" + encodeURIComponent(document.querySelector("#name").value));
+	var win = window.open("mailto:stmakerspace@gmail.com?subject=" + encodeURIComponent(document.querySelector("#subject").value) + "&body=" + encodeURIComponent("Hi, this is " + document.querySelector("#name").value.trim() + ".") + "%0A%0A" + encodeURIComponent(document.querySelector("#message").value) + "%0A%0A" + encodeURIComponent("Thanks and regards, ") + "%0A" + encodeURIComponent(document.querySelector("#name").value));
 	if(!win){
 alert("Sorry, but it seems pop-ups aren't allowed! Please allow pop-ups for the email to be generated.");
 }
