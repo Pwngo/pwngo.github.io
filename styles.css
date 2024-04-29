@@ -84,6 +84,7 @@ h2 {
 .imageContainer{
   float: right;
   padding: 0 12.5%;
+  display: none;
 }
 .event, .workshop, article{
   color: black;
