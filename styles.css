@@ -107,6 +107,7 @@ h2 {
 .slide-in {
   opacity: 0;
   transition: all 2s;
+  transform: translateX(-100%);
 }
 
 /* Define the state of the element when it's in view */
@@ -114,6 +115,7 @@ h2 {
   opacity: 1;
   transform: translateX(0);
 }
+
 
 .testimonial{
   background-color: white;
