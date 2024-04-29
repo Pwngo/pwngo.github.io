@@ -52,7 +52,7 @@
 
 <script>
 	function mail(subject, message){
-window.open("mailto:stmakerspace@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(message));	
+window.open("https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=" + encodeURIComponent(subject) + "&to=stmakerspace@gmail.com&body=" + encodeURIComponent(message));	
 	}
 	function parseDate(date){
 	return date.replace(/-/g, "/").slice(5, date.length) + "/" + date.slice(0, 4);
