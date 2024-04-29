@@ -72,7 +72,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
       </ul>
     </nav>
   </header>`;
-document.addEventListener("DOMContentLoaded", function () {
     const downloadButtons = document.querySelectorAll(".download");
     downloadButtons.forEach((button) => {
         button.addEventListener("click", function () {
@@ -81,6 +80,4 @@ document.addEventListener("DOMContentLoaded", function () {
 	    downloadFile("/" + fileName, fileName);
         });
     });
-});
-
 });
