@@ -6,9 +6,7 @@ function isInView(el) {
   const rect = el.getBoundingClientRect();
   return (
     rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
   );
 }
 
@@ -17,12 +15,15 @@ function checkElementsInView() {
   for (const element of slideInElements) {
     if (isInView(element)) {
       element.classList.add('active');
+    } else {
+      element.classList.remove('active');
     }
   }
 }
 
 // Listen for scroll events
 window.addEventListener('scroll', checkElementsInView);
+
 
 function downloadFile(url, name){
 var link = document.createElement("a");
