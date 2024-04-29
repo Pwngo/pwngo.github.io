@@ -29,7 +29,8 @@
   <script>
 document.querySelector("form").addEventListener("submit", function(event){
 	event.preventDefault();
-	window.open("mailto:stmakerspace@gmail.com?subject=" + encodeURIComponent(document.querySelector("#subject").value) + "&body=" + encodeURIComponent(document.querySelector("#message").value));
+	var win = window.open("mailto:stmakerspace@gmail.com?subject=" + encodeURIComponent(document.querySelector("#subject").value) + "&body=" + encodeURIComponent("Hi, this is " + document.querySelector("#name").value) + "%0A%0A" + encodeURIComponent(document.querySelector("#message").value) + "%0A%0A" + encodeURIComponent("Thanks and regards, ") + "%0A" + encodeURIComponent(document.querySelector("#name").value));
+	win.close();
 });
   </script>
   <footer>
