@@ -1,3 +1,11 @@
+function downloadFile(url, name){
+var link = document.createElement("a");
+link.href = url;
+link.download = name;
+document.body.appendChild(link);
+link.click();
+link.remove();
+}
 function changeFavicon(url){
   var link = document.querySelector("link[rel~='icon']");
 if (!link) {
@@ -64,4 +72,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
       </ul>
     </nav>
   </header>`;
+document.addEventListener("DOMContentLoaded", function () {
+    const downloadButtons = document.querySelectorAll(".download");
+    downloadButtons.forEach((button) => {
+        button.addEventListener("click", function () {
+            const fileName = this.getAttribute("name") + ".pdf";
+            console.log("Downloading: " + fileName);
+	    downloadFile("/" + fileName, fileName);
+        });
+    });
+});
+
 });
