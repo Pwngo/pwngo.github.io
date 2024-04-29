@@ -16,6 +16,7 @@ if (!link) {
 link.href = url;
 }
 changeFavicon("/favicon.png");
+document.title = "SpaceTime Makerspace";
 var currenturl = location.href.replace(location.origin + "/", "");
 if(currenturl == ""){
   currenturl = "index.html";
